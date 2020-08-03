@@ -88,8 +88,8 @@ def print_results(results_dic, results_stats_dic, model,
         #           both the key and the value. Remember the value is accessed 
         #           by results_stats_dic[key]
         #
-        if key in 'pct_':
-            print("{:20}: {:3d}".format(key, results_stats_dic[key]))
+        if key[0] == 'p':
+        	print('{} : {}'.format(key, results_stats_dic[key]))
 
 
     # IF print_incorrect_dogs == True AND there were images incorrectly 
