@@ -66,9 +66,9 @@ def get_pet_labels(image_dir):
         pet_labels.append(pet_name)
 
     for idx in range(0, len(filenames), 1):
-        if filenames[idx][0] != ".":
-            if filenames[idx] not in results_dic:
-                 results_dic[filenames[idx]] = [pet_labels[idx]]
+	    if filenames[idx][0] != ".":
+	        if filenames[idx] not in results_dic:
+	             results_dic[filenames[idx]] = [pet_labels[idx]]
         else:
              print("** Warning: Key=", filenames[idx], 
                    "already exists in results_dic with value =", results_dic[filenames[idx]])

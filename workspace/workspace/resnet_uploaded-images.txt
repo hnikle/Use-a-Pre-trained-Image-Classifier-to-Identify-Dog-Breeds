@@ -1,6 +1,6 @@
 Command Line Arguments:
      dir = uploaded_images/ 
-    arch = alexnet 
+    arch = resnet 
  dogfile = dognames.txt
 
 Empty Dictionary results_dic - n items= 0
@@ -27,15 +27,15 @@ Real:               irish setter   Classifier:       irish setter, red setter
 Real:               irish setter   Classifier:       irish setter, red setter
 
                    wolf_01.jpg: 
-Real:                       wolf   Classifier: red wolf, maned wolf, canis rufus, canis niger
+Real:                       wolf   Classifier: timber wolf, grey wolf, gray wolf, canis lupus
 
  NOT A MATCH:
 
                    wood_01.jpg: 
-Real:                       wood   Classifier:        standard poodle, poodle
+Real:                       wood   Classifier: white wolf, arctic wolf, canis lupus tundrarum
 
 # Total Images 4 # Matches: 3 # NOT Matches: 1
-{'irish_setter_01.jpg': ['irish setter', 'irish setter, red setter', 1, 1, 1], 'irish_setter_02.jpg': ['irish setter', 'irish setter, red setter', 1, 1, 1], 'wolf_01.jpg': ['wolf', 'red wolf, maned wolf, canis rufus, canis niger', 1, 0, 0], 'wood_01.jpg': ['wood', 'standard poodle, poodle', 0, 0, 1]}
+{'irish_setter_01.jpg': ['irish setter', 'irish setter, red setter', 1, 1, 1], 'irish_setter_02.jpg': ['irish setter', 'irish setter, red setter', 1, 1, 1], 'wolf_01.jpg': ['wolf', 'timber wolf, grey wolf, gray wolf, canis lupus', 1, 0, 0], 'wood_01.jpg': ['wood', 'white wolf, arctic wolf, canis lupus tundrarum', 0, 0, 0]}
 
      MATCH:
 
@@ -48,38 +48,32 @@ Real:               irish setter   Classifier:       irish setter, red setter
 PetLabelDog: 1  ClassLabelDog: 1
 
                    wolf_01.jpg: 
-Real:                       wolf   Classifier: red wolf, maned wolf, canis rufus, canis niger  
+Real:                       wolf   Classifier: timber wolf, grey wolf, gray wolf, canis lupus  
 PetLabelDog: 0  ClassLabelDog: 0
 
  NOT A MATCH:
 
                    wood_01.jpg: 
-Real:                       wood   Classifier:        standard poodle, poodle  
-PetLabelDog: 0  ClassLabelDog: 1
+Real:                       wood   Classifier: white wolf, arctic wolf, canis lupus tundrarum  
+PetLabelDog: 0  ClassLabelDog: 0
 
 # Total Images 4 # Matches: 3 # NOT Matches: 1
 
  ** Statistics from calculates_results_stats() function:
 N Images:  4  N Dog Images:  2  N NotDog Images:  2 
-Pct Corr dog:   0.5 Pct Corr NOTdog:   0.0  Pct Corr Breed:   1.0
+Pct Corr dog:   0.5 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.5
 
  ** Check Statistics - calculated from this function as a check:
 N Images:  4  N Dog Images:  2  N NotDog Images:  2 
 Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed: 100.0
 
 
-*** Results Summary for CNN Model Architecture ALEXNET ***
+*** Results Summary for CNN Model Architecture RESNET ***
 N Images            :   4
 N Dog Images        :   2
 N Not-Dog Images    :   2
  
-pct_match : 150.0
-pct_correct_dogs : 0.5
-pct_correct_breed : 1.0
-pct_correct_notdogs : 0.0
 
-INCORRECT Dog/NOT Dog Assignments:
-
-Total Elapsed Runtime: 0.27695727348327637 in seconds.
+Total Elapsed Runtime: 0.5525612831115723 in seconds.
 
 ** Total Elapsed Runtime: 0:0:0

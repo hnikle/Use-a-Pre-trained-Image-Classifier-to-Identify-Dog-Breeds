@@ -61,7 +61,7 @@ PetLabelDog: 0  ClassLabelDog: 0
 
  ** Statistics from calculates_results_stats() function:
 N Images:  4  N Dog Images:  2  N NotDog Images:  2 
-Pct Corr dog:   0.5 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.5
+Pct Corr dog:   0.5 Pct Corr NOTdog:   0.0  Pct Corr Breed:   1.0
 
  ** Check Statistics - calculated from this function as a check:
 N Images:  4  N Dog Images:  2  N NotDog Images:  2 
@@ -73,7 +73,13 @@ N Images            :   4
 N Dog Images        :   2
 N Not-Dog Images    :   2
  
+pct_match : 150.0
+pct_correct_dogs : 0.5
+pct_correct_breed : 1.0
+pct_correct_notdogs : 0.0
 
-Total Elapsed Runtime: 3.235776662826538 in seconds.
+INCORRECT Dog/NOT Dog Assignments:
+
+Total Elapsed Runtime: 3.149991035461426 in seconds.
 
 ** Total Elapsed Runtime: 0:0:3
