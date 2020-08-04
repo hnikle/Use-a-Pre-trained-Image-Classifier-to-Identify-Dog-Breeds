@@ -355,7 +355,7 @@ PetLabelDog: 1  ClassLabelDog: 1
 
  ** Statistics from calculates_results_stats() function:
 N Images: 40  N Dog Images: 30  N NotDog Images: 10 
-Pct Corr dog:   0.8 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.6
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:  80.0
 
  ** Check Statistics - calculated from this function as a check:
 N Images: 40  N Dog Images: 30  N NotDog Images: 10 
@@ -367,6 +367,10 @@ N Images            :  40
 N Dog Images        :  30
 N Not-Dog Images    :  10
  
+pct_match : 75.0
+pct_correct_dogs : 100.0
+pct_correct_breed : 80.0
+pct_correct_notdogs : 100.0
 
 INCORRECT Dog Breed Assignment:
 Real:             boston terrier   Classifier:                        basenji
@@ -376,6 +380,6 @@ Real:             great pyrenees   Classifier:                         kuvasz
 Real:                     beagle   Classifier:  walker hound, walker foxhound
 Real:           golden retriever   Classifier:                tibetan mastiff
 
-Total Elapsed Runtime: 3.1942946910858154 in seconds.
+Total Elapsed Runtime: 5.998732805252075 in seconds.
 
-** Total Elapsed Runtime: 0:0:3
+** Total Elapsed Runtime: 0:0:5

@@ -355,7 +355,7 @@ PetLabelDog: 1  ClassLabelDog: 1
 
  ** Statistics from calculates_results_stats() function:
 N Images: 40  N Dog Images: 30  N NotDog Images: 10 
-Pct Corr dog:   0.8 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.7
+Pct Corr dog: 100.0 Pct Corr NOTdog:  90.0  Pct Corr Breed:  90.0
 
  ** Check Statistics - calculated from this function as a check:
 N Images: 40  N Dog Images: 30  N NotDog Images: 10 
@@ -367,12 +367,19 @@ N Images            :  40
 N Dog Images        :  30
 N Not-Dog Images    :  10
  
+pct_match : 82.5
+pct_correct_dogs : 100.0
+pct_correct_breed : 90.0
+pct_correct_notdogs : 90.0
+
+INCORRECT Dog/NOT Dog Assignments:
+Real:                        cat   Classifier:   norwegian elkhound, elkhound
 
 INCORRECT Dog Breed Assignment:
 Real:             great pyrenees   Classifier:                         kuvasz
 Real:                     beagle   Classifier:  walker hound, walker foxhound
 Real:           golden retriever   Classifier:                       leonberg
 
-Total Elapsed Runtime: 5.629472017288208 in seconds.
+Total Elapsed Runtime: 8.395415544509888 in seconds.
 
-** Total Elapsed Runtime: 0:0:5
+** Total Elapsed Runtime: 0:0:8
